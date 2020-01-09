@@ -102,12 +102,7 @@ section {
     display: block;
 }
 
-body {
-    line-height: 1;
-    border: 5px dotted white;
 
-    font-family: Georgia, serif;
-}
 
 ol,
 ul {
@@ -141,11 +136,16 @@ body {
 
     background-color: #800000;
     color: white;
+    
 
 }
 
 html {
     padding: 10px;
+    line-height: 1;
+    border: 5px dotted white;
+    font-family: Georgia, serif;
+    margin: 10px;
 }
 
 
@@ -190,13 +190,14 @@ h4 {
 
 .bottom-section {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 100px;
     margin-left: 7%;
     margin-right: 7%;
     align-items: center;
     background-color: #cc0000;
     border-radius: 15px;
+    margin-bottom: 10px;
 
 }
 
@@ -251,23 +252,15 @@ a:hover {
     font-style: italic;
 }
 
-.final-section {
-
-    display: flex;
-    margin-left: 7%;
-    margin-right: 7%;
-    margin-top: 100px;
-    justify-content: space-evenly;
-    margin-bottom: 1%;
-    background-color: #cc0000;
-    border-radius: 15px;
+.finalogo {
+    display:none;
 }
+
 
 @media(max-width: 500px) {
 
     .top-section,
-    .bottom-section,
-    .final-section {
+    .bottom-section {
         background-color: yellow;
         color: black;
         margin-left: 3%;
@@ -303,4 +296,17 @@ a:hover {
     h1 {
         font-size: 20px;
     }
+    .finalogo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        height:20%;
+        align-items: center;
+    }
+}
+
+.wholemain {
+    display:flex;
+    flex-direction: column;
 }
