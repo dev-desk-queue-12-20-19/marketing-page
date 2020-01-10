@@ -1,5 +1,6 @@
 @mycolor: #800000;
 @anothercolor: #FFFFFF;
+@lastone: #cc0000;
 
 @ipad: ~"(max-width:768px)";
 
@@ -16,7 +17,7 @@
 }
 
 h2 {
-    color: @mycolor;
+
 
     &:hover {
         .mystyle;
@@ -31,11 +32,15 @@ h2 {
     font-family: Georgia, serif;
     letter-spacing: 1px;
     margin-bottom: 15px;
+    background: @mycolor;
+    color: @anothercolor;
 }
 
 .toppart {
     .easier(flex, row-reverse, center, space-around);
-    border: 2px dotted grey;
+    border: 2px dotted @anothercolor;
+    background: @lastone;
+    border-radius: 20px;
 
     @media(max-width: 500px) {
         flex-direction: column-reverse;
@@ -51,9 +56,10 @@ h2 {
         flex-direction: column;
 
 
+
         a {
             width: 100px;
-            height: 30px;
+            padding: 10px;
             margin-top: 10px;
             background: @mycolor;
             color: @anothercolor;
@@ -61,6 +67,7 @@ h2 {
             justify-content: center;
             display: flex;
             text-decoration: none;
+
         }
 
     }
@@ -95,7 +102,6 @@ ul {
 .middle-imgs {
     display: flex;
     justify-content: space-between;
-    border: 1px dashed grey;
     border-radius: 3px;
 
 }
